@@ -1,0 +1,276 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-08-26 16:10:07",
+    "user_query": "테스트 질문: 제주도 날씨",
+    "ai_response": "테스트 답변: 맑음 24도",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "result": "맑음"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-08-26 16:32:45",
+    "user_query": "제주도 오늘 날씨 알려줘",
+    "ai_response": "오늘 제주도의 날씨는 맑고 기온은 22°C입니다. 여행하기에 아주 좋은 날씨네요! 즐거운 제주도 여행 되세요!",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "weather"
+        },
+        "output": "🌤️ [제주도 전체] today 날씨: 맑음, 기온: 22°C (여행하기 좋은 날씨입니다)"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-08-26 16:37:49",
+    "user_query": "제주도 오늘 날씨 알려줘",
+    "ai_response": "오늘 제주도 날씨는 맑고 기온은 22°C입니다. 여행하기 좋은 날씨네요!",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "weather"
+        },
+        "output": "🌤️ [제주도 전체] today 날씨: 맑음, 기온: 22°C (여행하기 좋은 날씨입니다)"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-08-26 16:37:51",
+    "user_query": "서귀포 대표 맛집 특산물 추천해주고 abs(2 - 17) 계산해줘",
+    "ai_response": "서귀포에서 추천하는 대표 맛집과 특산물은 다음과 같습니다:\n\n- 흑돼지 구이\n- 제주 감귤/한라봉\n- 고기국수\n- 갈치조림\n\n그리고 abs(2 - 17)의 계산 결과는 15입니다. 제주도 여행을 즐기세요!",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "food",
+          "location": "서귀포"
+        },
+        "output": "🍊 [서귀포] 추천 특산물 및 맛집: 흑돼지 구이, 제주 감귤/한라봉, 고기국수, 갈치조림"
+      },
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "abs",
+          "num1": 2,
+          "num2": 17
+        },
+        "output": "계산 결과 (abs): 15.0"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-08-26 16:37:54",
+    "user_query": "125에 8을 곱하고, 2의 8제곱을 계산해줘",
+    "ai_response": "125에 8을 곱한 결과는 1000입니다. \n\n그리고 2의 8제곱은 256입니다. 추가로 궁금한 점이 있으면 말씀해 주세요!",
+    "tools_executed": [
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "multiply",
+          "num1": 125,
+          "num2": 8
+        },
+        "output": "계산 결과 (multiply): 1000.0"
+      },
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "multiply",
+          "num1": 2,
+          "num2": 8
+        },
+        "output": "계산 결과 (multiply): 16.0"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-08-26 16:40:31",
+    "user_query": "제주도 오늘 날씨 알려줘",
+    "ai_response": "오늘 제주도 날씨는 맑고 기온은 22°C입니다. 여행하기 좋은 날씨네요!",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "weather"
+        },
+        "output": "🌤️ [제주도 전체] today 날씨: 맑음, 기온: 22°C (여행하기 좋은 날씨입니다)"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-08-26 16:40:34",
+    "user_query": "서귀포 대표 맛집 특산물 추천해주고 abs(2 - 17) 계산해줘",
+    "ai_response": "서귀포에서 추천하는 대표 맛집과 특산물은 다음과 같습니다:\n\n- 흑돼지 구이\n- 제주 감귤/한라봉\n- 고기국수\n- 갈치조림\n\n그리고 abs(2 - 17)의 계산 결과는 15입니다. 제주도 여행을 즐기세요!",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "food",
+          "location": "서귀포"
+        },
+        "output": "🍊 [서귀포] 추천 특산물 및 맛집: 흑돼지 구이, 제주 감귤/한라봉, 고기국수, 갈치조림"
+      },
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "abs",
+          "num1": 2,
+          "num2": 17
+        },
+        "output": "계산 결과 (abs): 15.0"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-08-26 16:40:37",
+    "user_query": "125에 8을 곱하고, 2의 8제곱을 계산해줘",
+    "ai_response": "125에 8을 곱한 결과는 1000입니다. 그리고 2의 8제곱은 256입니다. 추가로 궁금한 점이 있으면 말씀해 주세요!",
+    "tools_executed": [
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "multiply",
+          "num1": 125,
+          "num2": 8
+        },
+        "output": "계산 결과 (multiply): 1000.0"
+      },
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "multiply",
+          "num1": 2,
+          "num2": 8
+        },
+        "output": "계산 결과 (multiply): 16.0"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-08-26 16:40:51",
+    "user_query": "제주 날씨씨",
+    "ai_response": "오늘 제주도 날씨는 맑고 기온은 22°C입니다. 여행하기 좋은 날씨네요! 추가로 궁금한 점이 있으면 말씀해 주세요.",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "weather"
+        },
+        "output": "🌤️ [제주도 전체] today 날씨: 맑음, 기온: 22°C (여행하기 좋은 날씨입니다)"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-08-26 16:41:12",
+    "user_query": "서귀포 특산물 및 맛집",
+    "ai_response": "서귀포에서 추천하는 특산물 및 맛집은 다음과 같습니다:\n\n- **흑돼지 구이**\n- **제주 감귤/한라봉**\n- **고기국수**\n- **갈치조림**\n\n또한, 서귀포 여행 팁으로는:\n\n- 렌터카 사전 예약 필수\n- 해안도로 드라이브 추천\n- 일몰 시간 확인\n\n즐거운 제주도 여행 되세요! 추가로 궁금한 점이 있으면 말씀해 주세요.",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "food",
+          "location": "서귀포"
+        },
+        "output": "🍊 [서귀포] 추천 특산물 및 맛집: 흑돼지 구이, 제주 감귤/한라봉, 고기국수, 갈치조림"
+      },
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "tip",
+          "location": "서귀포"
+        },
+        "output": "💡 [서귀포] 제주 여행 팁: 렌터카 사전 예약 필수, 해안도로 드라이브 추천, 일몰 시간 확인"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-08-26 16:49:27",
+    "user_query": "abs(2 - 17) 계산해주고 144의 제곱근(sqrt)을 구해줘",
+    "ai_response": "계산 결과는 다음과 같습니다:\n\n- \\( |2 - 17| = 15 \\)\n- \\( \\sqrt{144} = 12 \\)\n\n필요한 다른 계산이 있으면 말씀해 주세요!",
+    "tools_executed": [
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "abs",
+          "num1": 2,
+          "num2": 17
+        },
+        "output": "[내장함수 abs 연산] abs(2.0 - 17.0) = abs(-15.0) = 15.0"
+      },
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "sqrt",
+          "num1": 144
+        },
+        "output": "[내장함수 math.sqrt 연산] math.sqrt(144.0) = 12.0"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-08-26 16:49:30",
+    "user_query": "3.141592를 소수점 둘째자리까지 반올림(round)하고, 2의 10승(pow)을 계산해줘",
+    "ai_response": "계산 결과는 다음과 같습니다:\n\n- \\( 3.141592 \\)를 소수점 둘째 자리까지 반올림한 결과: **3.14**\n- \\( 2^{10} \\)의 결과: **1024**\n\n더 필요한 계산이나 질문이 있으면 말씀해 주세요!",
+    "tools_executed": [
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "round",
+          "num1": 3.141592,
+          "num2": 2
+        },
+        "output": "[내장함수 round 연산] round(3.141592, 2) = 3.14"
+      },
+      {
+        "tool": "math_tool",
+        "args": {
+          "operation": "pow",
+          "num1": 2,
+          "num2": 10
+        },
+        "output": "[내장함수 math.pow 연산] math.pow(2.0, 10.0) = 2.0 ^ 10.0 = 1024.0"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-08-26 16:49:34",
+    "user_query": "서귀포 특산물 맛집 추천과 함께 오늘 제주도 날씨 알려줘",
+    "ai_response": "서귀포의 특산물 맛집 추천과 오늘의 날씨는 다음과 같습니다:\n\n### 서귀포 특산물 맛집 추천\n- **흑돼지 구이**: 제주도의 대표적인 특산물로, 고소하고 풍미가 뛰어난 흑돼지를 맛볼 수 있는 곳입니다.\n- **제주 감귤/한라봉**: 신선하고 달콤한 제주 감귤과 한라봉은 꼭 맛봐야 할 과일입니다.\n- **고기국수**: 제주에서 유명한 국수로, 진한 육수와 함께 제공됩니다.\n- **갈치조림**: 신선한 갈치를 매콤하게 조린 요리로, 밥과 함께 먹으면 좋습니다.\n\n### 오늘의 제주도 날씨 (서귀포)\n- **날씨**: 맑음\n- **기온**: 22°C\n\n여행하기 좋은 날씨입니다! 추가로 궁금한 점이 있으면 언제든지 말씀해 주세요!",
+    "tools_executed": [
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "food",
+          "location": "서귀포"
+        },
+        "output": "🍊 [서귀포] 추천 특산물 및 맛집: 흑돼지 구이, 제주 감귤/한라봉, 고기국수, 갈치조림"
+      },
+      {
+        "tool": "jeju_tool",
+        "args": {
+          "category": "weather",
+          "location": "서귀포",
+          "date": "today"
+        },
+        "output": "🌤️ [서귀포] today 날씨: 맑음, 기온: 22°C (여행하기 좋은 날씨입니다)"
+      }
+    ]
+  }
+]
